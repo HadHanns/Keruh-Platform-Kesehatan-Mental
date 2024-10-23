@@ -1,5 +1,3 @@
-Berikut adalah contoh README.md yang bisa kamu gunakan untuk proyek “Keruh | Platform Kesehatan Mental”. Kamu bisa menyesuaikan beberapa detail sesuai kebutuhan:
-
 # Keruh | Platform Kesehatan Mental
 
 Keruh adalah platform kesehatan mental yang bertujuan untuk menyediakan informasi dan dukungan bagi individu yang mencari bantuan terkait kesehatan mental mereka. Proyek ini dibangun dengan menggunakan Vite dan teknologi web modern untuk memberikan pengalaman pengguna yang responsif dan interaktif.
@@ -18,7 +16,7 @@ Sebelum memulai, pastikan Anda telah menginstal [Node.js](https://nodejs.org/) d
 ## Instalasi
 
 1. Clone repositori ini ke mesin lokal Anda:
-   ```bash
+
    git clone https://github.com/HadHanns/Keruh-Platform-Kesehatan-Mental.git
 
 	2.	Masuk ke direktori proyek:
