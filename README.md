@@ -17,18 +17,17 @@ Sebelum memulai, pastikan Anda telah menginstal [Node.js](https://nodejs.org/) d
 
 1. Clone repositori ini ke mesin lokal Anda:
 
+   ```bash
    git clone https://github.com/HadHanns/Keruh-Platform-Kesehatan-Mental.git
 
-	2.	Masuk ke direktori proyek:
+   2.	Masuk ke direktori proyek:
+   ```
 
 cd Keruh-Platform-Kesehatan-Mental
 
-
-	3.	Instal semua dependensi yang diperlukan:
+    3.	Instal semua dependensi yang diperlukan:
 
 npm install
-
-
 
 Menjalankan Proyek
 
