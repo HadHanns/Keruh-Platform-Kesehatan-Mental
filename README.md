@@ -6,7 +6,7 @@ Keruh adalah platform kesehatan mental yang bertujuan untuk menyediakan informas
 
 - Informasi kesehatan mental
 - Sumber daya dan dukungan
-- Forum diskusi
+- AI Chat
 - Konten edukatif
 
 ## Prerequisites
