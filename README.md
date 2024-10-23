@@ -41,9 +41,6 @@ Setelah menjalankan perintah di atas, Anda akan melihat output yang menunjukkan 
 http://localhost:5173/
 ```
 
-Kontribusi
-
-Kontribusi sangat diterima! Jika Anda memiliki saran atau perbaikan, silakan buat issue atau pull request.
 
 Lisensi
 
@@ -58,4 +55,3 @@ Proyek ini dilisensikan di bawah MIT License. Lihat file LICENSE untuk detail le
 - **Kontribusi**: Mengundang orang lain untuk berkontribusi pada proyek.
 - **Lisensi**: Mencantumkan lisensi proyek.
 
-Silakan sesuaikan dengan kebutuhan dan detail spesifik dari proyek kamu!
