@@ -53,25 +53,25 @@ h1::before {
   background-repeat: cover;
 }
 
-form {
+/* form {
   margin: 0;
-}
-
+} */
+/* 
 .image-picker {
   display: flex;
   width: 100%;
   gap: 8px;
   margin-top: 24px;
-}
+} */
 
-.image-choice {
+/* .image-choice {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
-}
+} */
 
-.image-choice:has(:checked)::before {
+/* .image-choice:has(:checked)::before {
   pointer-events: none;
   position: absolute;
   right: 8px;
@@ -87,7 +87,7 @@ form {
   font-weight: bold;
   border-radius: 100px;
   box-shadow: 0 0 0 2px #fff;
-}
+} */
 
 .image-choice:has(:checked)::after {
   content: '';
@@ -109,9 +109,9 @@ form {
   position: absolute;
 }
 
-.image-choice:focus-within::after {
+/* .image-choice:focus-within::after {
   box-shadow: 0 0 0 4px var(--accent-color) inset;
-}
+} */
 
 .prompt-box {
   margin: 24px 0;
@@ -139,8 +139,8 @@ button {
 }
 
 button {
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
+  border: 1px solid #ddd; 
+  background-color: rgb(94, 195, 105);
   color: white;
   font-weight: bold;
   cursor: pointer;

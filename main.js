@@ -92,9 +92,7 @@ const model = genAI.getGenerativeModel({
 
 // Create chat instance
 const chat = model.startChat({
-  history: [
-    
-  ],
+  history: [],
   generationConfig: {
     maxOutputTokens: 5000
   }
