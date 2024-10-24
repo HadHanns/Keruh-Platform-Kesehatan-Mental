@@ -14,50 +14,77 @@
     body {
       font-family: 'Inter', sans-serif;
     }
+
+    .glassmorphism {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    #navbar {
+            transition: all 0.5s ease-in-out;
+    }
+    #navbar a {
+        transition: color 0.3s ease-in-out;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+
+    @media screen and (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+    }
   </style>
 </head>
 <body class="bg-gray-100">
 
   <!-- Header -->
-  <header class="bg-white shadow-md py-4">
-    <div class="container mx-auto flex justify-between items-center px-6">
-      
-      <nav>
-        <ul class="flex space-x-6">
-          <li><img src="/Assets/img/LOGO ANJAY.png" class="h-89 w-8 font-bold"></li>
-          <li><a href="#" class="text-gray-700">Home</a></li>
-          <li><a href="#" class="text-gray-700">Tentang Kami</a></li>
-          <li><a href="#" class="text-gray-700">Dukungan</a></li>
-          <li><a href="#" class="text-gray-700">Kontak</a></li>
-        </ul>
-      </nav>
-      <div>
-        <a href="login-page.html" class="text-gray-700 px-4">Masuk</a>
-        <a href="register-page.html" class="bg-green-500 text-white px-4 py-2 rounded-md">Daftar</a>
-      </div>
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-colors duration-300">
+    <nav class="container mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-gray-800 transition-colors duration-300"><img src="Assets/img/LOGO ANJAY.png" alt="" width="30"></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#beranda" class="text-gray-600 hover:text-gray-800 transition-colors duration-300">Beranda</a>
+                <a href="#tentang" class="text-gray-600 hover:text-gray-800 transition-colors duration-300">Tentang Kami</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800 transition-colors duration-300">Layanan</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800 transition-colors duration-300">Kontak</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden bg-white">
+        <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">Beranda</a>
+        <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">Tentang Kami</a>
+        <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">Layanan</a>
+        <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">Kontak</a>
     </div>
-  </header>
+</header>
 
   <!-- Hero Section -->
-  <section class="bg-white pb-32 h-[90vh]">
-    <div class="container mx-auto flex flex-col md:flex-row items-center px-6">
+  <section id="beranda" class="bg-white pb-32 h-[90vh]">
+    <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center px-6">
       <div class="md:w-1/2">
-        <img src="/Assets/img/LOGO ANJAY.png" class="h-25 w-20 font-bold">
         <br>
-        <h1 class="text-4xl font-bold mb-4" style="font-family: 'Lucida Bright', serif;">Selamat Datang di Keruh</h1>
-        <p class="text-gray-600 mb-6" style="font-style: italic;">Temukan Ketenangan dalam Pikiran Anda</p>
+        <h1 class="text-[56px] font-bold mb-2" style="font-family: 'Merriweather';">Selamat Datang di Keruh</h1>
+        <p class="text-gray-600 mb-[50px]" style="font-style: Montserrat;"> Mental Anda adalah prioritas utama kami.
+            Jangan ragu untuk berbicara, kami siap mendengarkan dan mendampingi Anda menuju kesejahteraan yang lebih baik.</p>
         <div class="space-x-4">
           <a href="#" class="bg-green-500 text-white px-6 py-2 rounded-md">Pelajari Lebih Lanjut</a>
           <a href="AI-Keruh.html" class="border border-green-500 text-green-500 px-6 py-2 rounded-md">Mulai Sekarang</a>
         </div>
       </div>
       <div class="md:w-1/2 mt-8 md:mt-0">
-        <img src="Assets/img/hape.png.PNG" class="mx-auto mp-2" width="450px" alt="Nature" class="rounded-md">
+        <img src="Assets/img/hape.png.PNG" class="mx-auto mr-[-58px] mt-6" width="600px" alt="Nature" class="rounded-md">
       </div>
     </div>
   </section>
 
-  <section class="bg-white pb-32 h-[90vh]">
+  <section id="tentang" class="bg-white pb-32 h-[90vh]">
     <div class="flex flex-col md:flex-row items-center bg-white p-8 rounded-lg shadow-lg">
       <!-- Gambar -->
       <div class="md:w-1/2">
@@ -190,6 +217,31 @@
       </nav>
     </div>
   </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+   const menuToggle = document.getElementById('menu-toggle');
+   const mobileMenu = document.getElementById('mobile-menu');
+   let lastScrollTop = 0;
+
+   window.addEventListener('scroll', function() {
+       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+       
+       if (scrollTop > 50) {
+           navbar.classList.add('glassmorphism', 'shadow-lg');
+           navbar.classList.remove('bg-transparent');
+       } else {
+           navbar.classList.remove('glassmorphism', 'shadow-lg');
+           navbar.classList.add('bg-transparent');
+       }
+       
+       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+   }, false);
+
+   menuToggle.addEventListener('click', function() {
+       mobileMenu.classList.toggle('hidden');
+   });
+</script>
 
 </body>
 </html>
