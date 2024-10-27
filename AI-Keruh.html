@@ -5,22 +5,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Baking with the Gemini API</title>
+  <!-- Import font Dongle dari Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
   <main>
-    <h1>Temukan jawaban dengan AI-Keruh</h1>
+    <h1 class="text-4xl font-family mb-4">Temukan jawaban dengan AI-Keruh</h1>
     <form>
       <div class="prompt-box">
         <label>
-          <input name="prompt" placeholder="Enter instructions here" type="text"
-            value="Hi how are you today?">
+          <input class="text-2xl" name="prompt" placeholder="Enter instructions here" type="text" value="Hi how are you today?">
         </label>
-        <button type="submit">Go</button>
+        <button type="submit" class="text-2xl">Go</button>
       </div>
     </form>
     <!-- <button class="clear-history">Clear History</button> -->
-    <p class="output">(Results will appear here)</p>
+    <p class="output text-2xl">(Results will appear here)</p>
   </main>
 
   <script type="module" src="/main.js"></script>
