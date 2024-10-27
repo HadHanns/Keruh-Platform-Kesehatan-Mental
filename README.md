@@ -41,17 +41,3 @@ Setelah menjalankan perintah di atas, Anda akan melihat output yang menunjukkan 
 http://localhost:5173/
 ```
 
-
-Lisensi
-
-Proyek ini dilisensikan di bawah MIT License. Lihat file LICENSE untuk detail lebih lanjut.
-
-### Penjelasan:
-
-- **Fitur**: Deskripsikan fitur-fitur utama yang ditawarkan oleh platform.
-- **Prerequisites**: Pastikan pengguna tahu bahwa mereka perlu menginstal Node.js.
-- **Instalasi**: Berikan langkah-langkah jelas untuk meng-clone repositori dan menginstal dependensi.
-- **Menjalankan Proyek**: Instruksi untuk menjalankan aplikasi dalam mode pengembangan.
-- **Kontribusi**: Mengundang orang lain untuk berkontribusi pada proyek.
-- **Lisensi**: Mencantumkan lisensi proyek.
-
