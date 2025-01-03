@@ -13,6 +13,45 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+      /* Styling tombol WhatsApp */
+      #whatsapp-chat {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25D366; /* Warna hijau WhatsApp */
+        color: white;
+        border-radius: 50%;
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        font-size: 24px;
+        z-index: 1000;
+        cursor: pointer;
+      }
+
+      #hb-km {
+        font-size: 24px;
+      }
+  
+      #whatsapp-chat:hover {
+        background-color: #128C7E; /* Warna hijau lebih gelap saat hover */
+      }
+  
+      /* Styling keterangan 'Hubungi Kami' */
+      #whatsapp-info {
+        position: fixed;
+        bottom: 90px; /* Posisi di atas tombol WhatsApp */
+        right: 20px; /* Sama dengan posisi tombol WhatsApp */
+        background-color: #25D366;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        z-index: 1000;
+        text-align: center;
+      }
+    </style>
+    <style>
       body {
         font-family: 'Inter', sans-serif;
       }
@@ -190,22 +229,22 @@
           <h2 class="text-5xl font-bold">Dapatkan Dukungan Kesehatan Mental</h2>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
-          <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-300"> <!-- Tambahkan border -->
+          <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-300 hover:drop-shadow-2xl duration-700"> <!-- Tambahkan border -->
             <img src="Assets/vector/icon.svg" alt="Konseling Profesional" class="mb-4 place-items-start">
             <h3 class="text-4xl font-semibold text-left">Konseling Profesional</h3>
             <p class="text-gray-600 text-left leading-tight">Akses layanan konseling dari profesional yang berpengalaman.</p>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-300"> <!-- Tambahkan border -->
+          <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-300 hover:drop-shadow-2xl duration-700"> <!-- Tambahkan border -->
             <img src="Assets/vector/icon1.svg" alt="Sumber Daya Beragam" class="mb-4 place-items-start">
             <h3 class="text-4xl font-semibold text-left">Sumber Daya Beragam</h3>
             <p class="text-gray-600 text-left leading-tight">Jelajahi sumber daya kesehatan mental yang komprehensif.</p>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-300"> <!-- Tambahkan border -->
+          <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-300 hover:drop-shadow-2xl duration-700"> <!-- Tambahkan border -->
             <img src="Assets/vector/icon2.svg" alt="Komunitas Support" class="mb-4 place-items-start">
             <h3 class="text-4xl font-semibold text-left">Komunitas Support</h3>
             <p class="text-gray-600 text-left leading-tight">Gabung dengan komunitas yang mendukung untuk berbagi pengalaman.</p>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-300"> <!-- Tambahkan border -->
+          <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-300 hover:drop-shadow-2xl duration-700"> <!-- Tambahkan border -->
             <img src="Assets/vector/icon3.svg" alt="Privasi Keamanan" class="mb-4 place-items-start">
             <h3 class="text-4xl font-semibold text-left">Privasi Terjamin</h3>
             <p class="text-gray-600 text-left leading-tight">Semua interaksi Anda di platform ini dijaga dengan ketat.</p>
@@ -222,15 +261,15 @@
           <h2 class="text-5xl font-bold ">Apa Kata Mereka Tentang Keruh?</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="bg-gray-100 p-6 rounded-md">
+          <div class="bg-gray-100 p-6 rounded-md hover:drop-shadow-2xl duration-700">
             <p class="text-gray-600 mb-4">"Keruh telah menjadi sumber dukungan yang luar biasa bagi saya."</p>
             <p class="text-green-500 font-semibold">- Sarah Putri</p>
           </div>
-          <div class="bg-gray-100 p-6 rounded-md">
+          <div class="bg-gray-100 p-6 rounded-md hover:drop-shadow-2xl duration-700">
             <p class="text-gray-600 mb-4">"Sebagai pekerja sosial, saya sangat mengapresiasi platform ini."</p>
             <p class="text-green-500 font-semibold">- Rudi Santoso</p>
           </div>
-          <div class="bg-gray-100 p-6 rounded-md">
+          <div class="bg-gray-100 p-6 rounded-md hover:drop-shadow-2xl duration-700">
             <p class="text-gray-600 mb-4">"Platform ini membantu saya menemukan cara untuk mengelola stres."</p>
             <p class="text-green-500 font-semibold">- Lira Farah</p>
           </div>
@@ -238,6 +277,17 @@
       </div>
     </section>
   
+   <!-- Keterangan Hubungi Kami -->
+   <div id="whatsapp-info">
+    <h1 id="hb-km">Punya pertanyaan Lain?</h1>
+  </div>
+
+  <!-- Tombol WhatsApp -->
+  <a id="whatsapp-chat" href="https://wa.me/628123456789" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2062095_application_chat_communication_logo_whatsapp_icon.svg/2048px-2062095_application_chat_communication_logo_whatsapp_icon.svg.png" alt="WhatsApp" width="40" height="40">
+  </a>
+
+
     <!-- FAQ Section -->
     <section id="q&a" class="bg-white py-16 ">
       <div class="container mx-auto px-6">
